@@ -9,7 +9,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 import javax.swing.text.MaskFormatter;
-import java.util.ArrayList; */
+import java.util.ArrayList; 
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -1278,7 +1278,7 @@ public class Menu extends JFrame{
 	public void customer(Customer e1)
 	{	
 		f = new JFrame("Customer Menu");
-		e1 = e;
+		e = e1;
 		f.setSize(400, 300);
 		f.setLocation(200, 200);
 		f.addWindowListener(new WindowAdapter() {

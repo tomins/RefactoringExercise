@@ -1,4 +1,3 @@
-package redmondn;
 
 import java.awt.*;
 
@@ -246,7 +245,7 @@ public class Menu extends JFrame{
 					    	
 					    if(cont)
 					    {
-						f1.dispose();
+						f.dispose();
 					    	loop = false;
 					    admin();					    
 					    }					    

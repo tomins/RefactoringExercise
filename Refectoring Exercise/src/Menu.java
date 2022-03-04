@@ -18,7 +18,7 @@ import java.util.Date;
 public class Menu extends JFrame {
 
 	private ArrayList<Customer> customerList = new ArrayList<Customer>();
-	private int position = 0;
+	//private int position = 0;
 	private String password;
 	private Customer customer = null;
 	private CustomerAccount acc = new CustomerAccount();
@@ -858,6 +858,7 @@ public class Menu extends JFrame {
 		});
 
 		navigateButton.addActionListener(new ActionListener() {
+			private int position = 0;
 			public void actionPerformed(ActionEvent ae) {
 				mainFrame.dispose();
 

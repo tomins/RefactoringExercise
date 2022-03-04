@@ -29,7 +29,7 @@ public class Menu extends JFrame {
 	
 
 	
-	JButton add;
+	
 	String PPS, firstName, surname, DOB, CustomerID;
 
 	public static void main(String[] args) {
@@ -117,7 +117,7 @@ public class Menu extends JFrame {
 					panel.add(dOBTextField);
 
 					JPanel panel2 = new JPanel();
-					add = new JButton("Add");
+					JButton add = new JButton("Add");
 
 					add.addActionListener(new ActionListener() {
 						public void actionPerformed(ActionEvent e) {

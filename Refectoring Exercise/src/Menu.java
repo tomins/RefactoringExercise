@@ -28,7 +28,7 @@ public class Menu extends JFrame {
 	JLabel customerIDLabel, passwordLabel;
 	JTextField customerIDTextField, passwordTextField;
 	
-	Customer e;
+	
 
 	JPanel panel2;
 	JButton add;
@@ -1202,7 +1202,7 @@ public class Menu extends JFrame {
 
 	public void customer(Customer e1) {
 		mainFrame = new JFrame("Customer Menu");
-		e = e1;
+		Customer e = e1;
 		mainFrame.setSize(400, 300);
 		mainFrame.setLocation(200, 200);
 		mainFrame.addWindowListener(new WindowAdapter() {

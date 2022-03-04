@@ -30,7 +30,7 @@ public class Menu extends JFrame {
 
 	
 	
-	String PPS, firstName, surname, DOB, CustomerID;
+	//String PPS, firstName, surname, DOB, CustomerID;
 
 	public static void main(String[] args) {
 		Menu driver = new Menu();
@@ -122,13 +122,13 @@ public class Menu extends JFrame {
 					add.addActionListener(new ActionListener() {
 						public void actionPerformed(ActionEvent e) {
 
-							PPS = pPSTextField.getText();
-							firstName = firstNameTextField.getText();
-							surname = surnameTextField.getText();
-							DOB = dOBTextField.getText();
+							String PPS = pPSTextField.getText();
+							String firstName = firstNameTextField.getText();
+							String surname = surnameTextField.getText();
+							String DOB = dOBTextField.getText();
 							password = "";
 
-							CustomerID = "ID" + PPS;
+							String CustomerID = "ID" + PPS;
 
 							add.addActionListener(new ActionListener() {
 								public void actionPerformed(ActionEvent e) {

@@ -26,12 +26,6 @@ public class Menu extends JFrame {
 	JLabel customerIDLabel, passwordLabel;
 	JTextField passwordTextField, customerIDTextField;
 	
-	
-
-	
-	
-	//String PPS, firstName, surname, DOB, CustomerID;
-
 	public static void main(String[] args) {
 		Menu driver = new Menu();
 		driver.menuStart();
@@ -73,10 +67,10 @@ public class Menu extends JFrame {
 		JButton continueButton = new JButton("Continue");
 		continuePanel.add(continueButton);
 
-		Container content = mainFrame.getContentPane();
-		content.setLayout(new GridLayout(2, 1));
-		content.add(userTypePanel);
-		content.add(continuePanel);
+		Container mainFrameContent = mainFrame.getContentPane();
+		mainFrameContent.setLayout(new GridLayout(2, 1));
+		mainFrameContent.add(userTypePanel);
+		mainFrameContent.add(continuePanel);
 
 		continueButton.addActionListener(new ActionListener() {
 			private String password;

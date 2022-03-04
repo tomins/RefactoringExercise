@@ -18,18 +18,17 @@ import java.util.Date;
 public class Menu extends JFrame {
 
 	private ArrayList<Customer> customerList = new ArrayList<Customer>();
-	//private String password;
 	private Customer customer = null;
 	private CustomerAccount acc = new CustomerAccount();
 	JFrame mainFrame, secondaryFrame;
 	JLabel firstNameLabel, surnameLabel, pPPSLabel, dOBLabel;
-	JTextField firstNameTextField, surnameTextField, pPSTextField, dOBTextField;
+	JTextField dOBTextField, firstNameTextField, surnameTextField , pPSTextField;
 	JLabel customerIDLabel, passwordLabel;
-	JTextField customerIDTextField, passwordTextField;
+	JTextField passwordTextField, customerIDTextField;
 	
 	
 
-	JPanel panel2;
+	
 	JButton add;
 	String PPS, firstName, surname, DOB, CustomerID;
 
@@ -117,7 +116,7 @@ public class Menu extends JFrame {
 					panel.add(dOBLabel);
 					panel.add(dOBTextField);
 
-					panel2 = new JPanel();
+					JPanel panel2 = new JPanel();
 					add = new JButton("Add");
 
 					add.addActionListener(new ActionListener() {

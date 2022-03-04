@@ -27,7 +27,7 @@ public class Menu extends JFrame {
 	JTextField firstNameTextField, surnameTextField, pPSTextField, dOBTextField;
 	JLabel customerIDLabel, passwordLabel;
 	JTextField customerIDTextField, passwordTextField;
-	Container content;
+	
 	Customer e;
 
 	JPanel panel2;
@@ -364,7 +364,7 @@ public class Menu extends JFrame {
 
 		JLabel label1 = new JLabel("Please select an option");
 
-		content = mainFrame.getContentPane();
+		Container content = mainFrame.getContentPane();
 		content.setLayout(new GridLayout(9, 1));
 		content.add(label1);
 		content.add(accountPanel);
@@ -1243,7 +1243,7 @@ public class Menu extends JFrame {
 			}
 
 			boxPanel.add(box);
-			content = mainFrame.getContentPane();
+			Container content = mainFrame.getContentPane();
 			content.setLayout(new GridLayout(3, 1));
 			content.add(labelPanel);
 			content.add(boxPanel);
@@ -1293,7 +1293,7 @@ public class Menu extends JFrame {
 
 					JLabel label1 = new JLabel("Please select an option");
 
-					content = mainFrame.getContentPane();
+					Container content = mainFrame.getContentPane();
 					content.setLayout(new GridLayout(5, 1));
 					content.add(label1);
 					content.add(statementPanel);

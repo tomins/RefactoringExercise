@@ -18,8 +18,7 @@ import java.util.Date;
 public class Menu extends JFrame {
 
 	private ArrayList<Customer> customerList = new ArrayList<Customer>();
-	//private int position = 0;
-	private String password;
+	//private String password;
 	private Customer customer = null;
 	private CustomerAccount acc = new CustomerAccount();
 	JFrame mainFrame, secondaryFrame;
@@ -81,6 +80,7 @@ public class Menu extends JFrame {
 		content.add(continuePanel);
 
 		continueButton.addActionListener(new ActionListener() {
+			private String password;
 			public void actionPerformed(ActionEvent ae) {
 				String user = userType.getSelection().getActionCommand();
 

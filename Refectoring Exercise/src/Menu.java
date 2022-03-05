@@ -312,9 +312,9 @@ public class Menu extends JFrame {
 		mainFrame.setVisible(true);
 
 		JPanel deleteCustomerPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
-		JButton deleteCustomer = new JButton("Delete Customer");
-		deleteCustomer.setPreferredSize(new Dimension(250, 20));
-		deleteCustomerPanel.add(deleteCustomer);
+		JButton deleteCustomerButton = new JButton("Delete Customer");
+		deleteCustomerButton.setPreferredSize(new Dimension(250, 20));
+		deleteCustomerPanel.add(deleteCustomerButton);
 
 		JPanel deleteAccountPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
 		JButton deleteAccount = new JButton("Delete Account");
@@ -1098,7 +1098,7 @@ public class Menu extends JFrame {
 			}
 		});
 
-		deleteCustomer.addActionListener(new ActionListener() {
+		deleteCustomerButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ae) {
 				boolean found = true, loop = true;
 

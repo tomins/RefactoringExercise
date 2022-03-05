@@ -317,9 +317,9 @@ public class Menu extends JFrame {
 		deleteCustomerPanel.add(deleteCustomerButton);
 
 		JPanel deleteAccountPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
-		JButton deleteAccount = new JButton("Delete Account");
-		deleteAccount.setPreferredSize(new Dimension(250, 20));
-		deleteAccountPanel.add(deleteAccount);
+		JButton deleteAccountButton = new JButton("Delete Account");
+		deleteAccountButton.setPreferredSize(new Dimension(250, 20));
+		deleteAccountPanel.add(deleteAccountButton);
 
 		JPanel bankChargesPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
 		JButton bankChargesButton = new JButton("Apply Bank Charges");
@@ -420,16 +420,16 @@ public class Menu extends JFrame {
 							});
 							mainFrame.setVisible(true);
 
-							JComboBox<String> box = new JComboBox<String>();
+							JComboBox<String> comboBox = new JComboBox<String>();
 							for (int i = 0; i < customer.getAccounts().size(); i++) {
 
-								box.addItem(customer.getAccounts().get(i).getNumber());
+								comboBox.addItem(customer.getAccounts().get(i).getNumber());
 							}
 
-							box.getSelectedItem();
+							comboBox.getSelectedItem();
 
 							JPanel boxPanel = new JPanel();
-							boxPanel.add(box);
+							boxPanel.add(comboBox);
 
 							JPanel buttonPanel = new JPanel();
 							JButton continueButton = new JButton("Apply Charge");
@@ -451,7 +451,7 @@ public class Menu extends JFrame {
 							} else {
 
 								for (int i = 0; i < customer.getAccounts().size(); i++) {
-									if (customer.getAccounts().get(i).getNumber() == box.getSelectedItem()) {
+									if (customer.getAccounts().get(i).getNumber() == comboBox.getSelectedItem()) {
 										acc = customer.getAccounts().get(i);
 									}
 								}
@@ -1148,7 +1148,7 @@ public class Menu extends JFrame {
 			}
 		});
 
-		deleteAccount.addActionListener(new ActionListener() {
+		deleteAccountButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ae) {
 				boolean found = true, loop = true;
 
